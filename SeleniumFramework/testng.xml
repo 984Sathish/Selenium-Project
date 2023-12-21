@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="TestComponent.Listeners"></listener>
+	</listeners>
+  <test thread-count="2" name="Order product" parallel="true">
+    <classes>
+     	
+        <class name="ClientApplication.POMClientAppWithJSON"/>
+        <class name="ClientApplication.POMClientAppWithHashMap"/>
+        <class name="ClientApplication.POMClientAppEnd2EndFlow"/>
+        <class name="ClientApplication.POMClientAppDataProvider"/>
+        <class name="ClientApplication.ClientAppEnd2EndFlow"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite --> 	
